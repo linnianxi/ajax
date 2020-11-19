@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sum = '';
+        for (var i = 1;i <= 9;i++) {
+            for (var j = 1;j <=i;j++){
+                 // 在 var j = 1的情况下
+                // 如果j<=i就是正三角形；
+                // 如果j<=10-i就是倒三角形
+                sum += j + 'x' + i + '=' + j * i +'\t'
+            }
+            sum += '\n\n'
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

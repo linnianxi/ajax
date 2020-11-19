@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ['琵琶行','阿房宫赋','离骚','逍遥游','蜀道难','阿房宫赋','逍遥游',''];
+        function suzhou (arr){
+            var newArray = [];
+            for (var i = 0 ;i < arr.length;i++ ) {
+                if (newArray.indexOf(arr[i]) === -1) {
+                // 如果新数组里面没有arr 
+                    newArray.push(arr[i])
+                }
+           
+            }
+            return newArray;
+
+        }
+        console.log( suzhou (arr));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

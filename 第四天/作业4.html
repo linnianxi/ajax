@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function suzhou(num){
+        var shanghai=true
+      for (var i = 2;i <= num-1;i++){
+          if (num % i ===0){
+            shanghai =false;
+            break
+          }
+      }
+         return shanghai? '质数':'非质数'
+        }
+        var num=prompt('请输入一个数字')
+        alert(suzhou(num))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

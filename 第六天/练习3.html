@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function getRandom(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+        // var suzhou = getRandom(0, 50)
+
+        // var num = prompt('请您输入一个0到50之间的数字');
+
+        // var count = 0;
+        //     while (true) {
+        //         if (num <= 0 || num >= 50) {
+        //     alert('您输入的时间区域不对')
+        // }
+        //         if (num > suzhou) {
+        //             alert('您猜大了，请继续猜');
+        //         }
+        //         if (num < suzhou) {
+        //             alert('您猜小了，请继续再猜')
+        //         }
+        //         else {
+        //             alert('恭喜您猜对了')
+        //             break
+        //         }
+        //         num = prompt('请您输入一个0到50之间的数字');
+           
+        //         count ++;
+        //         if(count == 3) {
+        //             alert('您的机会用完了')
+        //             break
+        //         }
+        //     }
+        
+        
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var suzhou = getRandom(0, 50)
+        // 在0到50 之间的随机数值；
+
+        
+
+        var count = 0;
+        // 输入的次数
+            while (true) { 
+                // 加true就是死循环
+                var num = prompt('请您输入一个0到50之间的数字');
+                if (num <= 0 || num > 50) {
+                    // 这是输入值得范围
+            alert('您输入的时间区域不对')
+            // 如果输入的值超过了这个范围，那么就会直接退出
+            break;
+        } 
+                if (num > suzhou) {
+                    alert('您猜大了，请继续猜');
+                }
+               else if (num < suzhou) {
+                    alert('您猜小了，请继续再猜')
+                }
+                else {
+                    alert('恭喜您猜对了')
+                    break
+                }
+                
+           
+                count ++;
+                if(count == 10) {
+                    alert('您的机会用完了')
+                    break
+                }
+            }
+
+
+   
+
+        
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

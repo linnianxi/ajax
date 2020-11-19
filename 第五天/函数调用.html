@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function shanghai () {
+            var wuHu =prompt('请您输入年份')
+            if (isYunnisn (wuHu) ) {
+                alert('这是一个平年2月只有28天')
+            }else {
+                alert('这是一个闰年2月只有29天')
+            }
+        }
+        shanghai ()
+
+       function isYunnisn (year) {
+         suzhou = true;
+         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                suZhou =false;
+         }
+         return suZhou;
+       }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

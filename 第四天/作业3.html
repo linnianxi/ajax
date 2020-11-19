@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //     function getSum(arr) {
+        //         // var arr=[bu,xiang,zhu]
+        //         var max = arr[0];
+        //         for (var i = 1;i <= arr.length;i++) {
+        //             if (arr[i] > max) {
+        //                 max = arr[i]
+        //             }
+        //         }
+        //         return max
+        //     }
+        //     var bu=prompt('请输入第一个值')
+        //     var xiang=prompt('请输入第二个值')
+        //     var zhu=prompt('请输入第三个值')
+        //   var arr=[bu,xiang,zhu]
+        //     alert('这是最大的一个数值' + getSum(arr))
+
+        function getSum(arr) {
+            var max = arr[0];
+            for (var i = 1;i <= arr.length;i++) {
+            if (arr[i] > max) {
+                max = arr[i]
+            }
+            }
+            return max
+        }
+        var suzhou =prompt('请输入第一个数值');
+        var shanghai =prompt('请输入第二个数值');
+        var wuhan =prompt('请输入第三个数值')
+     var arr =[suzhou,shanghai,wuhan];
+        alert('这是最大值' + getSum(arr))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

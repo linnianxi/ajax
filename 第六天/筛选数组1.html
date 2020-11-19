@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [1890,3000,6786,2000,6590,2356,1989];
+        var newArr = [];
+        for (var i = 0;i < arr.length;i++) {
+            if(arr[i] > 2000) {
+                newArr.push(arr[i])
+                // 这句话的意思就是在新的数组里面加上筛选之后大于2000的数值，器结果与下面一样
+                // newArr[newArr.length] = arr[i]
+
+                // 得出的结果就是筛选之后大于2000的数字
+            }
+        }
+        console.log(newArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

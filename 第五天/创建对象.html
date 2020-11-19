@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Wzry (uname,strong,boll) {
+            this.uname = uname;
+            this.strong = strong;
+            this.boll = boll;
+            this.attack = function (skill) {
+                console.log(skill);
+            }
+        }
+        var cwj = new Wzry ('蔡文姬','辅助型','1000血量')
+        var Wzt = new Wzry ('武则天','法师','500血量')
+        console.log(cwj.uname);
+        console.log(cwj.strong);
+        console.log(cwj.boll);
+        cwj.attack('孟德大人');
+        console.log(Wzt.uname);
+        console.log(Wzt.strong);
+        console.log(Wzt.boll);
+        Wzt.attack('朕很中意你')
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var shanghai = getRandom(0,50);
+        var coun = 0 ;
+        while (true){
+            var num =prompt('请输入一个0到50之间的数字')
+            if (num > shanghai ) {
+                alert('您猜大了，请继续猜')
+            }
+           else if(num < shanghai) {
+                alert('您猜小了，请继续猜')
+            }
+            else {
+                alert('猜对了')
+                break
+            }
+            coun++
+            if (coun == 3) {
+                alert('您的机会用完了')
+                break
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 第一种方法如下；
+        function computer (uname,color,weight,brand,model) {
+            this.uname = uname;
+            this.color = color;
+            this.weight = weight;
+            this.brand = brand;
+            this.model = model;
+            this.like = function (sc) {
+                alert('我的那个她在银川，她叫于雪，我很想她，她喜欢' + sc);
+            }
+        }
+        var monkey = new computer ('我的那个ta','white','2000克','小米','小米青春版');
+        console.log(monkey);
+        monkey.like ('看电影,听音乐,打游戏,敲代码')
+    //    第二种方法如下；
+//     var obj = {
+//         uname : '孙超',
+//         sex : '男',
+//         height : '170cm',
+//         love : '美女',
+//         city : '上海',
+//         like : function () {
+//             console.log('看美女');
+//             console.log('看书');
+//             console.log('旅游');
+//         }
+    
+//      }
+//    console.log(obj);
+//   obj.like()
+   
+    // 第三种方法
+//  var suzhou = new Object();
+//     suzhou.name = '我的那个ta';
+//     suzhou.sex = '女';
+//     suzhou.height = '160cm';
+//     suzhou.love = '看书';
+//     suzhou.city = '银川';
+//     suzhou.like = function (yx) {
+//         console.log(yx);
+//     }
+// console.log(suzhou);
+// suzhou.like('旅游，代文奇说他要看美女，看书')
+    // 第四种方法
+    
+    </script>
+</head>
+<body>a
+    
+</body>
+</html>
